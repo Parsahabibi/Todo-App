@@ -1,24 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import TodoProvider from './Context/TodoContext';
 
+import Form from './component/Form';
+//when use called provider you can't access to the update state so you must create new component if you want to use it
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TodoProvider>
+      {/* all components */}
+      <Form />
+    </TodoProvider>
   );
 }
 
