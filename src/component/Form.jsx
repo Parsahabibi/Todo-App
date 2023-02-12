@@ -130,7 +130,7 @@ const Form = () => {
                                         <Checkbox color='success' {...label} />
                                     </Grid>
                                     <Grid>
-                                        <Typography color={'white'}>{item.title}</Typography>
+                                        <Typography variant='h5' color={'white'}>{item.title}</Typography>
                                     </Grid>
                                     <Button position={"fixed"} variant='outlined' color='error' onClick={() => handleDelete(item.id)}>delete<DeleteIcon /></Button>
                                     <Button position={"fixed"} onClick={() => handleUpdate(item.id, item.title)} variant='outlined'>update<EditIcon /></Button>
